@@ -1,0 +1,23 @@
+\documentclass{article}
+
+
+% \VignetteIndexEntry{Sample vignette demo}
+
+\author{John Leonard}
+\title{Sample vignette demo}
+
+\begin{document}
+\maketitle
+
+Hello world!
+
+<<echo=TRUE>>=
+
+library(sample)
+
+ls()
+
+
+@
+
+\end{document}

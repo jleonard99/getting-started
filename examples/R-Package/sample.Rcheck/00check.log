@@ -1,0 +1,76 @@
+* using log directory 'C:/Users/jl66/Projects/GettingStarted/examples/R-Package/sample.Rcheck'
+* using R version 2.15.1 (2012-06-22)
+* using platform: i386-pc-mingw32 (32-bit)
+* using session charset: ISO8859-1
+* checking for file 'sample/DESCRIPTION' ... OK
+* checking extension type ... Package
+* this is package 'sample' version '1.0'
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... NOTE
+As from R 2.14.0 all packages need a namespace.
+One will be generated on installation, but it is better to handcraft a
+NAMESPACE file: R CMD build will produce a suitable starting point.
+CRAN requires a NAMESPACE file for all submissions.
+* checking for executable files ... OK
+* checking whether package 'sample' can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking for portable file names ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking for unstated dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... NOTE
+prepare_Rd: catsAndDogs.Rd:15-17: Dropping empty section \details
+prepare_Rd: catsAndDogs.Rd:18-20: Dropping empty section \source
+prepare_Rd: catsAndDogs.Rd:21-23: Dropping empty section \references
+prepare_Rd: puffy.Rd:19-21: Dropping empty section \details
+prepare_Rd: puffy.Rd:22-28: Dropping empty section \value
+prepare_Rd: puffy.Rd:35-37: Dropping empty section \note
+prepare_Rd: puffy.Rd:32-34: Dropping empty section \author
+prepare_Rd: puffy.Rd:29-31: Dropping empty section \references
+prepare_Rd: puffy.Rd:41-43: Dropping empty section \seealso
+prepare_Rd: sample-package.Rd:35-36: Dropping empty section \seealso
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking contents of 'data' directory ... OK
+* checking data for non-ASCII characters ... OK
+* checking data for ASCII and uncompressed saves ... OK
+* checking installed files from 'inst/doc' ... NOTE
+The following files should probably not be installed:
+  'Makefile', 'sample.tex'
+The following directories should probably not be installed:
+  'src'
+
+Consider the use of a .Rinstignore file: see 'Writing R Extensions',
+or move the vignette sources from 'inst/doc' to 'vignettes'.
+* checking examples ... OK
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in 'inst/doc' ... WARNING
+Package vignette(s) without corresponding PDF:
+   'sample.rnw'
+
+* checking running R code from vignettes ... OK
+* checking re-building of vignette PDFs ... OK
+* checking PDF version of manual ... OK
+WARNING: There was 1 warning.
+NOTE: There were 3 notes.
+See
+  'C:/Users/jl66/Projects/GettingStarted/examples/R-Package/sample.Rcheck/00check.log'
+for details.

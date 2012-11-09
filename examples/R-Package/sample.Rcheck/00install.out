@@ -1,0 +1,14 @@
+* installing *source* package 'sample' ...
+** Creating default NAMESPACE file
+** R
+** data
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+   'sample.rnw' 
+** testing if installed package can be loaded
+
+* DONE (sample)
