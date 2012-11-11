@@ -287,7 +287,7 @@ give a shot to creating something from scratch.
   >> notepad Makefile.  (note the period - it is necessary to fool notepad)
 \end{verbatim}
 
-Because Mac has no command or application called ``notepad,'' you will
+Because Mac has no command or application called \verb!notepad! you will
 need to use the command \verb!touch! instead. Then, inside the Makefile, add the following lines:
 
 \begin{verbatim}
@@ -319,10 +319,11 @@ sweaving the RNW file - we just haven't included any real R code.
 
 Add the following code into the main body of your document:
 \begin{verbatim}
- <<echo=TRUE>>=
- "hello world"
- @
+<<echo=TRUE>>\=
+"hello world"
+@
 \end{verbatim}
+
 Then save the file and remake the PDF.  If all works OK, you should see fix-spacing text
 appear in your file like this:
 <<echo=TRUE>>=
@@ -332,17 +333,19 @@ appear in your file like this:
 Now you're dangerous.  Try the following code:
 
 \begin{verbatim}
- <<fig=T,echo=F,width=6.5,height=3.5>>=
+ <<fig=T,echo=F,fig.width=6.5,fig.height=3.5>>\=
  x=seq(0,2,by=0.01)
  y=2*sin(2*pi*(x-1/4))
  plot(x,y)
  @
 \end{verbatim}
 
-<<fig=T,echo=F,height=3.5>>=
+<<fig=T,echo=F,fig.height=3.5>>=
+
 x=seq(0,2,by=0.01)
 y=2*sin(2*pi*(x-1/4))
 plot(x,y)
+
 @
 
 \section{Learning more - a collection of possible next steps}
