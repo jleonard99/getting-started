@@ -1,0 +1,3 @@
+[submodule "useful-make-macros"]
+	path = useful-make-macros
+	url = https://github.com/jleonard99/useful-make-macros.git

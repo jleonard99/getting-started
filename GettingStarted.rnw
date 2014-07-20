@@ -11,6 +11,11 @@
 \renewcommand{\contentsname}{Tasks to accomplish}
 
 \begin{document}
+
+<<echo=F>>=
+source('molten-utils.R')
+@
+
 \maketitle
 
 \begin{abstract}
@@ -340,7 +345,7 @@ Now you're dangerous.  Try the following code:
  @
 \end{verbatim}
 
-<<fig=T,echo=F,fig.height=3.5>>=
+<<label="fig:testlabel",fig.caption="Hello world figure",echo=F,fig.height=3.5>>=
 
 x=seq(0,2,by=0.01)
 y=2*sin(2*pi*(x-1/4))

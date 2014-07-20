@@ -11,6 +11,9 @@ include useful-make-macros/src/Recipes.mak   # common recipes
 
 # the .title macros are scanned by code in Menus.mak to produce menus
 
+
+all-docs := molten-utils.R framed.sty .Rhistory
+
 clean.title = Clean temporary files
 clean:
 	@echo + Cleaning 
@@ -26,7 +29,8 @@ baremetal.title = Clean everything but the sources files
 baremetal: realclean
 	@echo + Cleaning to baremetal
 	
+molten-utils.R : molten-utils.rnw ; $(recipe-rnw-to-r)
 GettingStarted.pdf : GettingStarted.tex ; $(recipe-tex-to-pdf)
-GettingStarted.tex : GettingStarted.rnw ; $(recipe-rnw-to-tex)
+GettingStarted.tex : GettingStarted.rnw molten-utils.R ; $(recipe-rnw-to-tex)
 
 x: GettingStarted.pdf
